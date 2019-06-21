@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="https://github.com/mate-desktop/mate-icon-theme/raw/master/mate/16x16/apps/accessories-text-editor.png" />
+  <title>pluma Code Analyzer results</title>
+</head>
+<body>
+<h1>
+  <a href="https://github.com/mate-desktop">mate-desktop</a>/<a href="https://github.com/mate-desktop/pluma">pluma</a> Static analyzer results
+</h1>
+  <a href="https://github.com/mate-desktop/pluma" title="Github"><i class="fa fa-github fa-2x"></i>GitHub</a>
+  <a href="https://travis-ci.org/mate-desktop/pluma/builds/548749163" title="Travis CI"><img src="https://travis-ci.org/mate-desktop/pluma.svg?branch=master" alt="Build Status" /></a>
+<hr/>
+Commit: <a href="https://github.com/mate-desktop/pluma/commit/670372615b0ffcd6aef09892e5df134580c3282c">670372615b0ffcd6aef09892e5df134580c3282c</a><br/>
+Compare: <a href="https://github.com/mate-desktop/pluma/compare/fad391d7cd59...670372615b0f">fad391d7cd59...670372615b0f</a><br/>
+Branch: <a href="https://github.com/mate-desktop/pluma/tree/master">master</a><br/>
+Time: 2019-06-21 15:49:03+00:00<br/>
+Messages:<br/>
+<pre>
+pluma-print-preview: Fix warning: identical expressions
+
+based in gedit commit:
+https://gitlab.gnome.org/GNOME/gedit/commit/e30939812fcf884d031757fb3cc2a8383f3ce21f
+
+Fixes Clang analyzer warning:
+pluma-print-preview.c:743:24: warning: identical expressions on both sides of logical operator
+        if (priv->tile_h <= 0 || priv->tile_h <= 0)
+            ~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~
+
+Fixes cppcheck warning:
+[pluma/pluma-print-preview.c:743]: (style) Same expression on both sides of '||'.
+</pre>
+<hr/>
+<ul>
+<li><a href="2019-06-21-154903-3170-cppcheck@670372615b0f_master">2019-06-21-154903-3170-cppcheck@670372615b0f_master</a></li>
+<li><a href="2019-06-21-154423-7723-1@670372615b0f_master">2019-06-21-154423-7723-1@670372615b0f_master</a></li>
+<li><a href=2019-06-18-165300-2587-cppcheck@915a195dccdc_print-preview_identical-expressions>2019-06-18-165300-2587-cppcheck@915a195dccdc_print-preview_identical-expressions</a></li>
+<li><a href=2019-06-18-164829-7721-1@915a195dccdc_print-preview_identical-expressions>2019-06-18-164829-7721-1@915a195dccdc_print-preview_identical-expressions</a></li>
+<li><a href=2019-06-18-164312-2415-cppcheck@3d4da5e263a9_print-preview_identical-expressions>2019-06-18-164312-2415-cppcheck@3d4da5e263a9_print-preview_identical-expressions</a></li>
+<li><a href=2019-06-18-163838-7722-1@3d4da5e263a9_print-preview_identical-expressions>2019-06-18-163838-7722-1@3d4da5e263a9_print-preview_identical-expressions</a></li>
+<li><a href=2019-06-10-142133-5932-cppcheck@fad391d7cd59_master>2019-06-10-142133-5932-cppcheck@fad391d7cd59_master</a></li>
+<li><a href=2019-06-10-141655-7654-1@fad391d7cd59_master>2019-06-10-141655-7654-1@fad391d7cd59_master</a></li>
+<li><a href=2019-06-06-142740-8696-cppcheck@7b834db6278c_master>2019-06-06-142740-8696-cppcheck@7b834db6278c_master</a></li>
+<li><a href=2019-06-06-142304-7633-1@7b834db6278c_master>2019-06-06-142304-7633-1@7b834db6278c_master</a></li>
+<li><a href=2019-06-06-134727-2000-cppcheck@7b834db6278c_travis-master>2019-06-06-134727-2000-cppcheck@7b834db6278c_travis-master</a></li>
+<li><a href=2019-06-06-134252-7634-1@7b834db6278c_travis-master>2019-06-06-134252-7634-1@7b834db6278c_travis-master</a></li>
+<li><a href=2019-06-06-133049-4689-cppcheck@d76c3e37d121_master>2019-06-06-133049-4689-cppcheck@d76c3e37d121_master</a></li>
+<li><a href=2019-06-06-132612-7635-1@d76c3e37d121_master>2019-06-06-132612-7635-1@d76c3e37d121_master</a></li>
+<li><a href=2019-06-06-100206-8519-cppcheck@6895034bba76_master>2019-06-06-100206-8519-cppcheck@6895034bba76_master</a></li>
+<li><a href=2019-06-06-095720-7625-1@6895034bba76_master>2019-06-06-095720-7625-1@6895034bba76_master</a></li>
+<li><a href=2019-06-06-092630-3070-cppcheck@92faa11ef9e8_master>2019-06-06-092630-3070-cppcheck@92faa11ef9e8_master</a></li>
+<li><a href=2019-06-06-092146-7630-1@92faa11ef9e8_master>2019-06-06-092146-7630-1@92faa11ef9e8_master</a></li>
+<li><a href=2019-06-05-201025-6156-cppcheck@fd4405cc794d_master>2019-06-05-201025-6156-cppcheck@fd4405cc794d_master</a></li>
+<li><a href=2019-06-05-200542-7624-1@fd4405cc794d_master>2019-06-05-200542-7624-1@fd4405cc794d_master</a></li>
+</ul>
+</body>
+</html>
